@@ -1,7 +1,5 @@
 -- Identify the most common pizza size ordered.
 
-SELECT quantity, COUNT(order_details_id)
-FROM order_details GROUP BY quantity;
 
 SELECT pizzas.size, COUNT(order_details.order_details_id) AS order_count
 FROM pizzas JOIN order_details
